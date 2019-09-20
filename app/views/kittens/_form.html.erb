@@ -1,0 +1,25 @@
+<%= form_for kitten do |f| %>
+  <%= render 'shared/errors' %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <br>
+
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+
+  <br>
+
+  <%= f.label :cuteness %>
+  <%= f.number_field :cuteness %>
+
+  <br>
+
+  <%= f.label :softness %>
+  <%= f.number_field :softness %>
+
+  <br>
+
+  <%= f.submit yield(:button_text) %>
+<% end %>
